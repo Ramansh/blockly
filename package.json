@@ -19,12 +19,14 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "tests/scripts/test_setup.sh",
-    "test": "node tests/jsunit/test_runner.js"
+    "test": "node tests/jsunit/test_runner.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "Apache-2.0",
   "private": true,
   "devDependencies": {
-    "jshint": "latest"
+    "eslint": "2.9.0"
   },
   "jshintConfig": {
     "globalstrict": true,
@@ -44,9 +46,8 @@
     "install": "^0.8.8",
     "npm": "^4.4.4",
     "closure-library": "^1.43629075.2",
-    "webdriverio": "^4.6.2"
+    "webdriverio": "^4.6.2",
+    "snyk": "^1.189.0"
   },
-  "devDependencies": {
-    "eslint": "2.9.0"
-  }
+  "snyk": true
 }
