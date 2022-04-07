@@ -44,7 +44,7 @@
     "install": "^0.8.8",
     "npm": "^4.4.4",
     "closure-library": "^1.43629075.2",
-    "webdriverio": "^4.6.2"
+    "webdriverio": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "2.9.0"
